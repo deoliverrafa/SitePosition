@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: 300ms all ease-in-out;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.nav-bar{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 3.5em;
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    z-index: 99;
+}
+
+.logo{
+    position:absolute;
+    left: 3em;
+    font-weight: bolder;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    transition: 150ms all ease-in-out;
+}
+
+.logo:hover{
+    color: rgb(250, 132, 5);
+}
+
+.nav-bar .fa-regular.fa-user{
+    position: absolute;
+    right: 6em;
+    color: black;
+    font-size: 1.2em;
+    transition: 80ms ease-in;
+    cursor: pointer;
+}
+
+.nav-bar .fa-regular.fa-user:hover{
+    font-weight: bolder;
+    -webkit-text-stroke: 2px whitesmoke;
+    transform: scale(1.4);
+}
+
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8em;
+}
+
+.item-list{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.item-list:hover{
+    color: rgb(250, 132, 5);
+}
+
+.section-background{
+    background-image: url(./images/cachoeira-na-floresta-de-outono.jpg);
+    height: 41em;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.text-box{
+    margin-top: 15%;
+    display: flex;
+    width: 100%;
+    gap: 3em;
+    justify-content: center;
+    align-items: center;
+    height: 10em;
+}
+
+.text-box:hover{
+    backdrop-filter: blur(1.5px);
+    
+}
+
+.text-box p{
+    width: 50%;
+    -webkit-text-stroke: .5px black;
+    font-size: 1.2em;
+}
+
+.text-box h1{
+    -webkit-text-stroke: .5px black;
+}
+
+.backdrop-filter{
+    height: 10em;
+}
+
+.modal{
+    display: none;
+}
+
+.modal-content{
+    display: none;
+}
+
+.modal.active{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, .5);
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content.active{
+    background: rgba(255, 255, 255, .7);
+    position: fixed;
+    top: 4em;
+    width: 30em;
+    height: 40em;
+    border-radius: 3em;
+    align-items: center;
+    display: flex;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, .8);
+    border: 3px solid rgba(0, 0, 0, 0.66);
+
+}
+
+.modal-content h3{
+    position: absolute;
+    top: .5em;
+    left: 32.5%;
+    font-size: 24px;
+    color: orange;
+    -webkit-text-stroke: .5px black;
+}
+
+.modal-content .best-offer{
+    position: absolute;
+    top: 2.5em;
+    left: 6.3em;
+    color: Black;
+}
+
+.modal-content .fa-solid.fa-xmark{
+    font-size: 2em;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.modal-image{
+    background-image: url(./images/quartooferta.jpg);
+    position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid orange;
+    box-shadow: 0px,0px,3px lightgray;
+    border-radius: 2em;
+    top: 0em;
+    width: 22em;
+    height: 27em;
+    position: relative;
+    left: 4em;
+}
+
+.modal-content .star{
+    display: flex;
+    position: absolute;
+    bottom: 4em;
+    left: 4.2em;
+    color: orange;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content .star p{
+    margin-left: 10px;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+.modal-content .star h2{
+    margin-left: 24px;
+}
+
+.reservar{
+    width: 12em;
+    height: 35px;
+    position: absolute;
+    bottom: 2.5em;
+    left: 33%;
+    top: 93%;
+    background-color: transparent;
+    border: 2px solid orange;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.reservar:hover{
+    border: 2px solid black;
+    border-radius: 4px;
+    color: orange;
+    background-color: black;
+}
+
+
+.section-offers{
+    background-color: blue;
+    width: 100%;
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section-offers .offers{
+    background-color: pink;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15em;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-offers .star, .section-offers2 .star{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 3em;
+    top: 78%;
+    color: orange;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    left: 0%;
+    text-align: center;
+}
+
+.section-offers .fa-solid.fa-star, .section-offers2 .fa-solid.fa-star{
+    font-size: 12px;
+    position: relative;
+    left: 0%;
+}
+
+.section-offers p, .section-offers2 p{
+    font-size: 14px;
+    margin-left: 8px;
+    margin-right: 6em;
+}
+
+.section-offers .star h2, .section-offers2 .star h2{
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+}
+
+.section-offers .offers .offer1{
+    background-color: red;
+    width: 17em;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.section-offers .offers .offer1 .img1{
+    background-image: url(/images/quarto1.jpg);
+    margin-top: 1.5em;
+    border-radius: 1em;
+    border: 3px solid orange;
+    top: 5%;
+    width: 15em;
+    height: 18em;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-offers .offers .offer1 .reservar{
+    position: absolute;
+    left: 22%;
+    top: 4em;
+}
+
+.section-offers .offers .offer2{
+    background-color: brown;
+    width: 17em;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.section-offers .offers .offer2 .img2{
+    background-image: url(/images/quarto1.jpg);
+    margin-top: 1.5em;
+    border-radius: 1em;
+    border: 3px solid orange;
+    top: 5%;
+    width: 15em;
+    height: 18em;
+    background-position: center;
+    background-size: cover;
+}
+
+.section-offers .offers .offer2 .reservar{
+    position: absolute;
+    left: 22%;
+    top: 4em;
+}
+
+.section-offers .offers .offer3{
+    background-color: purple;
+    width: 17em;
+    height: 100%;
+    position: relative;
+}
+
+.section-offers .offers .offer3 .reservar{
+    position: absolute;
+    left: 22%;
+    top: 4em;
+}
+
+.section-offers2{
+    margin-top: 3.5em;
+    background-color: blue;
+    width: 100%;
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.section-offers2 .offers{
+    background-color: pink;
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15em;
+}
+
+.section-offers2 .offers .offer4{
+    background-color: red;
+    width: 17em;
+    height: 100%;
+    position: relative;
+}
+
+.section-offers2 .offers .offer4 .reservar{
+    position: absolute;
+    left: 22%;
+    top: 4em;
+}
+
+.section-offers2 .offers .offer5{
+    background-color: brown;
+    width: 17em;
+    height: 100%;
+    position: relative;
+}
+
+.section-offers2 .offers .offer5 .reservar{
+    position: absolute;
+    left: 22%;
+    top: 4em;
+}
+
+.section-offers2 .offers .offer6{
+    background-color: purple;
+    width: 17em;
+    height: 100%;
+    position: relative;
+}
+
+.section-offers2 .offers .offer6 .reservar{
+    position: absolute;
+    left: 22%;
+    top: 4em;
+}
+
+@media (max-width: 1320px){
+
+    .section-offers .offers .offer3, .section-offers2 .offers .offer6{
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    .section-offers{
+        display: grid;
+    }
+    .section-offers .offers .offer3, .section-offers2 .offers .offer4,.section-offers .offers .offer5,.section-offers .offers .offer2{
+        display: none;
+    }
+}

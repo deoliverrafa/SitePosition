@@ -3,12 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    transition: 300ms all ease-in-out;
+    transition: 200ms all ease-in-out;
+    scroll-behavior: smooth;
+    
 }
 
-body{
-    background-color: lightgray;
-}
 
 .nav-bar{
     justify-content: center;
@@ -16,14 +15,14 @@ body{
     align-items: center;
     height: 3.5em;
     background-color: white;
-    position: fixed;
+    position: sticky;
     width: 100vw;
     z-index: 99;
 }
 
 .logo{
-    position:absolute;
-    left: 3em;
+    position: absolute;
+    left:1em;
     font-weight: bolder;
     font-size: 1em;
     text-decoration: none;
@@ -36,9 +35,9 @@ body{
     color: rgb(250, 132, 5);
 }
 
-.nav-bar .fa-regular.fa-user{
+.nav-bar .fa-solid.fa-bars{
     position: absolute;
-    right: 6em;
+    right: 2em;
     color: black;
     font-size: 1.2em;
     transition: 80ms ease-in;
@@ -56,6 +55,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 8em;
+    
 }
 
 .item-list{
@@ -71,9 +71,12 @@ body{
 .section-background{
     background-image: url(./images/cachoeira-na-floresta-de-outono.jpg);
     height: 41em;
+    width: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
 }
 
 .text-section{
@@ -84,28 +87,26 @@ body{
 }
 
 .text-box{
-    margin-top: 15%;
     display: flex;
     width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: row;
     gap: 3em;
     justify-content: center;
     align-items: center;
-    height: 10em;
+    height: 25%;
+    background-color: rgba(0, 0, 0, .2);
 }
 
 .text-box:hover{
-    backdrop-filter: blur(1.5px);
-    
+    backdrop-filter: blur(1.8px);
 }
 
 .text-box p{
     width: 50%;
-    -webkit-text-stroke: .5px black;
     font-size: 1.2em;
-}
-
-.text-box h1{
-    -webkit-text-stroke: .5px black;
+    color: white;
+    font-weight: bold;
 }
 
 .backdrop-filter{
@@ -230,7 +231,6 @@ body{
 
 
 .section-offers{
-    background-color: blue;
     width: 100%;
     height: 30em;
     display: flex;
@@ -241,7 +241,6 @@ body{
 }
 
 .section-offers .offers{
-    background-color: pink;
     width: 100%;
     height: 85%;
     display: flex;
@@ -258,12 +257,13 @@ body{
     position: absolute;
     width: 100%;
     height: 3em;
-    top: 78%;
+    top: 76%;
     color: orange;
     align-items: center;
     justify-content: center;
     background-color: black;
     left: 0%;
+    border-radius: .5em;
     text-align: center;
 }
 
@@ -282,24 +282,25 @@ body{
 .section-offers .star h2, .section-offers2 .star h2{
     font-size: 16px;
     position: absolute;
-    right: 0;
+    right: .3em;
 }
 
 .section-offers .offers .offer1{
-    background-color: red;
-    width: 17em;
+    width: 18em;
     height: 100%;
     position: relative;
     display: flex;
     justify-content: center;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    border: 2px solid rgba(0, 0, 0, .3);
 }
 
 .section-offers .offers .offer1 .img1{
     background-image: url(/images/quarto1.jpg);
-    margin-top: 1.5em;
+    margin-top: 1em;
     border-radius: 1em;
     border: 3px solid orange;
-    top: 5%;
     width: 15em;
     height: 18em;
     background-position: center;
@@ -313,17 +314,19 @@ body{
 }
 
 .section-offers .offers .offer2{
-    background-color: brown;
-    width: 17em;
+    width: 18em;
     height: 100%;
     position: relative;
     display: flex;
     justify-content: center;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    border: 2px solid rgba(0, 0, 0, .3);
 }
 
 .section-offers .offers .offer2 .img2{
-    background-image: url(/images/quarto1.jpg);
-    margin-top: 1.5em;
+    background-image: url(/images/quarto2.jpg);
+    margin-top: 1em;
     border-radius: 1em;
     border: 3px solid orange;
     top: 5%;
@@ -340,10 +343,26 @@ body{
 }
 
 .section-offers .offers .offer3{
-    background-color: purple;
-    width: 17em;
+    width: 18em;
     height: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    border: 2px solid rgba(0, 0, 0, .3);
+}
+
+.section-offers .offers .offer3 .img3{
+    background-image: url(/images/quarto2.jpg);
+    margin-top: 1em;
+    border-radius: 1em;
+    border: 3px solid orange;
+    top: 5%;
+    width: 15em;
+    height: 18em;
+    background-position: center;
+    background-size: cover;
 }
 
 .section-offers .offers .offer3 .reservar{
@@ -354,7 +373,6 @@ body{
 
 .section-offers2{
     margin-top: 3.5em;
-    background-color: blue;
     width: 100%;
     height: 30em;
     display: flex;
@@ -365,7 +383,6 @@ body{
 }
 
 .section-offers2 .offers{
-    background-color: pink;
     width: 100%;
     height: 85%;
     display: flex;
@@ -376,10 +393,26 @@ body{
 }
 
 .section-offers2 .offers .offer4{
-    background-color: red;
-    width: 17em;
+    width: 18em;
     height: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    border: 2px solid rgba(0, 0, 0, .3);
+}
+
+.section-offers2 .offers .offer4 .img4{
+    background-image: url(/images/quarto3.jpg);
+    margin-top: 1em;
+    border-radius: 1em;
+    border: 3px solid orange;
+    top: 5%;
+    width: 15em;
+    height: 18em;
+    background-position: center;
+    background-size: cover;
 }
 
 .section-offers2 .offers .offer4 .reservar{
@@ -389,10 +422,26 @@ body{
 }
 
 .section-offers2 .offers .offer5{
-    background-color: brown;
-    width: 17em;
+    width: 18em;
     height: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    border: 2px solid rgba(0, 0, 0, .3);
+}
+
+.section-offers2 .offers .offer5 .img5{
+    background-image: url(/images/quarto5.jpg);
+    margin-top: 1em;
+    border-radius: 1em;
+    border: 3px solid orange;
+    top: 5%;
+    width: 15em;
+    height: 18em;
+    background-position: center;
+    background-size: cover;
 }
 
 .section-offers2 .offers .offer5 .reservar{
@@ -402,16 +451,106 @@ body{
 }
 
 .section-offers2 .offers .offer6{
-    background-color: purple;
-    width: 17em;
+    width: 18em;
     height: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    border: 2px solid rgba(0, 0, 0, .3);
+}
+
+.section-offers2 .offers .offer6 .img6{
+    background-image: url(/images/quarto3.jpg);
+    margin-top: 1em;
+    border-radius: 1em;
+    border: 3px solid orange;
+    top: 5%;
+    width: 15em;
+    height: 18em;
+    background-position: center;
+    background-size: cover;
 }
 
 .section-offers2 .offers .offer6 .reservar{
     position: absolute;
     left: 22%;
     top: 4em;
+}
+
+/* section offers hover */
+
+.section-offers .offers .offer1:hover{
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.section-offers .offers .offer2:hover{
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.section-offers .offers .offer3:hover{
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.section-offers .offers .offer4:hover{
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.section-offers .offers .offer5:hover{
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.section-offers .offers .offer6:hover{
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.quartos{
+    height: 5em;
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quartos h3{
+    color: black;
+    font-size: 2em;
+}
+
+.quartos h3:hover{
+    color: orange;
+    
+}
+
+.rodape{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+}
+
+.rodape .secao{
+    width: 100%;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.rodape .secao .foter-content1{
+    display: flex;
+    color: black;
+    font-weight: bolder;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5em;
+    position: relative;
+    top: 3em;
 }
 
 @media (max-width: 1320px){
@@ -421,7 +560,37 @@ body{
     }
 }
 
-@media (max-width: 800px){
+@media (max-width:720px) {
+
+    .nav-bar ul{
+        display: none;
+    }
+
+}
+
+@media (max-width:666px) {
+    .rodape .secao .foter-content1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5em;
+    }
+
+    .rodape .secao{
+        gap: 0px;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .modal.active{
+        display: none;
+    }
+}
+
+
+@media (max-width: 817px){
     .section-offers{
         display: grid;
     }

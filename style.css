@@ -137,7 +137,7 @@
 .modal-content.active{
     background: rgba(255, 255, 255, .7);
     position: fixed;
-    top: 4em;
+    top: 2em;
     width: 30em;
     height: 40em;
     border-radius: 3em;
@@ -462,7 +462,7 @@
 }
 
 .section-offers2 .offers .offer6 .img6{
-    background-image: url(./images/quarto6jpg);
+    background-image: url(./images/quarto6.jpg);
     margin-top: 1em;
     border-radius: 1em;
     border: 3px solid orange;
@@ -550,7 +550,11 @@
     flex-wrap: nowrap;
     gap: 5em;
     position: relative;
-    top: 3em;
+    width: 75%;
+    height: 80%;
+    top: 10%;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 1320px){
@@ -564,21 +568,6 @@
 
     .nav-bar ul{
         display: none;
-    }
-
-}
-
-@media (max-width:666px) {
-    .rodape .secao .foter-content1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5em;
-    }
-
-    .rodape .secao{
-        gap: 0px;
     }
 
 }
@@ -597,4 +586,19 @@
     .section-offers .offers .offer3, .section-offers2 .offers .offer4,.section-offers .offers .offer5,.section-offers .offers .offer2{
         display: none;
     }
+
+    .rodape .secao .foter-content1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5em;
+        gap: 3em;
+    }
+
+    .rodape .secao{
+        position: relative;
+        bottom: 4em;
+    }
+
 }

@@ -297,7 +297,7 @@
 }
 
 .section-offers .offers .offer1 .img1{
-    background-image: url(/images/quarto1.jpg);
+    background-image: url(./images/quarto1.jpg);
     margin-top: 1em;
     border-radius: 1em;
     border: 3px solid orange;
@@ -325,7 +325,7 @@
 }
 
 .section-offers .offers .offer2 .img2{
-    background-image: url(/images/quarto2.jpg);
+    background-image: url(./images/quarto2.jpg);
     margin-top: 1em;
     border-radius: 1em;
     border: 3px solid orange;
@@ -354,7 +354,7 @@
 }
 
 .section-offers .offers .offer3 .img3{
-    background-image: url(/images/quarto2.jpg);
+    background-image: url(./images/quarto3.jpg);
     margin-top: 1em;
     border-radius: 1em;
     border: 3px solid orange;
@@ -404,7 +404,7 @@
 }
 
 .section-offers2 .offers .offer4 .img4{
-    background-image: url(/images/quarto3.jpg);
+    background-image: url(./images/quarto4.jpg);
     margin-top: 1em;
     border-radius: 1em;
     border: 3px solid orange;
@@ -433,7 +433,7 @@
 }
 
 .section-offers2 .offers .offer5 .img5{
-    background-image: url(/images/quarto5.jpg);
+    background-image: url(./images/quarto5.jpg);
     margin-top: 1em;
     border-radius: 1em;
     border: 3px solid orange;
@@ -462,7 +462,7 @@
 }
 
 .section-offers2 .offers .offer6 .img6{
-    background-image: url(/images/quarto3.jpg);
+    background-image: url(./images/quarto6jpg);
     margin-top: 1em;
     border-radius: 1em;
     border: 3px solid orange;

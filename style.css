@@ -602,3 +602,12 @@
     }
 
 }
+
+@media (max-width: 640px) {
+    .text-box{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+    }
+}

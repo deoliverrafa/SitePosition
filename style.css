@@ -96,6 +96,7 @@
     align-items: center;
     height: 25%;
     background-color: rgba(0, 0, 0, .2);
+    text-align: center;
 }
 
 .text-box:hover{

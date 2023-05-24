@@ -9,6 +9,7 @@
 }
 
 
+
 .nav-bar{
     justify-content: center;
     display: flex;
@@ -62,6 +63,7 @@
     text-decoration: none;
     color: black;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .item-list:hover{
@@ -71,7 +73,7 @@
 .section-background{
     background-image: url(./images/cachoeira-na-floresta-de-outono.jpg);
     height: 41em;
-    width: 100%;
+    width: 100vw;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -558,6 +560,25 @@
     align-items: center;
 }
 
+.rodape .secao .foter-content1 a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rodape .secao .foter-content1 i{
+    font-size: 1.3em;
+}
+
+.rodape .secao .foter-content1 p{
+    display: flex;
+    gap: .35em;
+}
+
+.rodape .secao .foter-content1 i:hover{
+    transform: scale(1.4);
+}
+
 .display-hover{
     display: none;
     transform: scale(0);
@@ -570,7 +591,7 @@
     top: 5em;
     align-items: center;
     width: 6em;
-    height: 10em;
+    height: 13em;
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, .8);
@@ -580,6 +601,129 @@
    
 }
 
+.display-hover #login-btn{
+    font-weight: lighter;
+}
+
+.display-hover a{
+    color: black;
+}
+
+.modal-login{
+   display: none;
+}
+
+.modal-login.active{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .3);
+    top: 0;
+    right: 0;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-login .login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 15em;
+    height: 20em;
+    border-radius: 1em;
+    backdrop-filter: blur(2px);
+}
+
+.modal-login .login .box-login{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.modal-login .login .box-login .input-login{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-login .login .box-login .input-password{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-login .login .box-login input{
+    border-radius: .3em;
+    width: 15em;
+    height: 2em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid orange;
+    cursor: pointer;
+    z-index: 100;
+    outline: 0;
+    color:whitesmoke;
+    font-weight: bolder;
+}
+
+
+.modal-login .login .box-login h3{
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.modal-login .login .box-login .login-btn-modal{
+    background-color: black;
+    border: 1px orange solid;
+    color: whitesmoke;
+    font-weight: bold;
+    transform: 80ms ease-in-out;
+    cursor: pointer;
+    height: 2em;
+
+}
+
+.modal-login .login .box-login .login-btn-modal:hover{
+    color: orange;
+    transform: scale(1.02);
+}
+
+.modal-login .login .box-login .fa-solid.fa-lock{
+    position: relative;
+    transform: translate(0em,1.3em);
+}
+
+.modal-login .login .box-login .fa-solid.fa-user{
+    transform: translate(0em,1.2em);
+}
+
+.modal-login .login .box-login .fa-solid.fa-lock.active{
+    transform: translateY(-.1em) translateX(.0em);
+    color: orange;
+}
+
+
+.modal-login .login .box-login .fa-solid.fa-user.active{
+    transform: translateY(-.1em) translateX(.0em);
+    color: orange;
+}
+
+.modal-login .login .box-login .registre{
+    position: absolute;
+    bottom: 1em;
+    right: 4.5em;
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.modal-login .login .box-login .registre:hover{
+    color: orange;
+}
 
 
 @keyframes hoveron {
@@ -601,9 +745,6 @@
     
 }
 
-
-
-
 @media (max-width: 1320px){
 
     .section-offers .offers .offer3, .section-offers2 .offers .offer6{
@@ -611,14 +752,14 @@
     }
 }
 
-@media (max-width:720px) {
+@media (max-width:900px) {
 
     .nav-bar ul{
         display: none;
     }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 900px) {
     .display-hover{
         display: none;
     }

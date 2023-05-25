@@ -18,7 +18,7 @@
     background-color: white;
     position: sticky;
     width: 100vw;
-    z-index: 99;
+    z-index: 50;
 }
 
 .logo{
@@ -71,7 +71,7 @@
 }
 
 .section-background{
-    background-image: url(./images/cachoeira-na-floresta-de-outono.jpg);
+    background-image: url(https://i.postimg.cc/JzqHbDK7/cachoeira-na-floresta-de-outono.jpg);
     height: 41em;
     width: 100vw;
     background-position: center;
@@ -148,7 +148,6 @@
     display: flex;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, .8);
     border: 3px solid rgba(0, 0, 0, 0.66);
-
 }
 
 .modal-content h3{
@@ -626,6 +625,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
+    animation: opacity 120ms ease-in forwards;
 }
 
 .modal-login .login{
@@ -633,10 +633,10 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.1);
-    width: 15em;
-    height: 20em;
+    width: 20em;
+    height: 35em;
     border-radius: 1em;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px); 
 }
 
 .modal-login .login .box-login{
@@ -669,7 +669,6 @@
     font-weight: bolder;
 }
 
-
 .modal-login .login .box-login h3{
     color: white;
     font-weight: bold;
@@ -684,8 +683,8 @@
     transform: 80ms ease-in-out;
     cursor: pointer;
     height: 2em;
-
 }
+
 
 .modal-login .login .box-login .login-btn-modal:hover{
     color: orange;
@@ -714,8 +713,8 @@
 
 .modal-login .login .box-login .registre{
     position: absolute;
-    bottom: 1em;
-    right: 4.5em;
+    bottom: 8.5em;
+    right: 7em;
     color: whitesmoke;
     font-weight: bold;
     text-decoration: none;
@@ -723,6 +722,133 @@
 
 .modal-login .login .box-login .registre:hover{
     color: orange;
+}
+
+.modal-register{
+    display: none;
+}
+
+.modal-register.active{
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 85;
+    animation: aparecer 120ms ease-in forwards;
+}
+
+.modal-register .register{
+    width: 20em;
+    height: 30em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.modal-register .register .box-register{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.modal-register .register .box-register h3{
+    color: whitesmoke;
+    font-size: 2em;
+    position: relative;
+}
+
+.modal-register .register .box-register .input-register{
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+    position: relative;
+}
+
+.modal-register .register .box-register .input-register input{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid orange;
+    border-radius: .4em;
+    color: whitesmoke;
+    font-weight: bold;
+    z-index: 99;
+}
+
+.modal-register .register .box-register .input-password{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-register .register .box-register .input-password input{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid orange;
+    border-radius: .4em;
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.modal-register .register .box-register .registrar-btn-modal{
+    background-color: black;
+    color: whitesmoke;
+    border: 1px solid orange;
+    border-radius: .2em;
+    height: 2em;
+}
+
+.modal-register .register .box-register .registrar-btn-modal:hover{
+    background-color: black;
+    color: orange;
+    border: 1px solid orange;
+    border-radius: .2em;
+}
+
+.modal-register .register .box-register .fa-solid.fa-user{
+    transform: translate(0.2em,1.5em);
+}
+
+.modal-register .register .box-register .fa-solid.fa-user.active{
+    transform: translateY(.2em);
+    color: orange;
+}
+
+.modal-register .register .box-register .fa-solid.fa-lock{
+    transform: translate(0.2em,1em);
+}
+
+.modal-register .register .box-register .fa-solid.fa-lock{
+    transform: translate(0.2em,1em);
+}
+
+.modal-register .register .box-register .fa-solid.fa-lock.active{
+    transform: translateY(0em);
+    color: orange;
+}
+
+
+
+@keyframes aparecer {
+    from{  
+        opacity: 0%;   
+        transform: scale(0);
+    }
+
+    to{
+        opacity: 100%;
+        transform: scale(1);
+    }
 }
 
 

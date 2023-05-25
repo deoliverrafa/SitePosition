@@ -74,12 +74,10 @@ passwrd_input.onfocus = function(){
 
 
 fechar.onclick = function (){
-    modal.classList.remove('active')
     modal_content.classList.remove('active')
 }
 
 btn_reservar.onclick= function (){
-    modal.classList.remove('active')
     modal_content.classList.remove('active')
 }
 

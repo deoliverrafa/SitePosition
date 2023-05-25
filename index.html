@@ -18,7 +18,7 @@
         <ul class="list">
             <a href="#home" class="item-list">Home</a>
             <a href="" class="item-list">Sobre</a>
-            <a href="#quartos" class="item-list">Quartos</a>
+            <a href="#oferta-quartos" class="item-list">Quartos</a>
             <a class="item-list" id="login-btn">Login</a>
         </ul>
         <i class="fa-solid fa-bars"></i>
@@ -27,9 +27,9 @@
     <div class="display-hover">
         <div class="items">
             <ul>
-                <a href="#home">Home</a>
-                <a href="">Sobre</a>
-                <a href="#quartos">Quartos</a>
+                <a class="item-list" href="#home" id="home" >Home</a>
+                <a class="item-list" id="sobre" href="">Sobre</a>
+                <a class="item-list" href="#oferta-quartos" id="quartos" >Quartos</a>
                 <a class="item-list" id="login-btn">Login</a>
             </ul>
         </div>
@@ -69,12 +69,12 @@
         
 
 
-    <section class="quartos">
+    <section class="quartos"  id="oferta-quartos">
         <h3>Reserve <span class="span">Já!!</span></h3>
     </section>
 
 
-    <section class="section-offers" id="quartos">
+    <section class="section-offers">
         <div class="offers">
                 <div class="offer1">
                     <div class="img1">
@@ -215,10 +215,21 @@
                      <input class="name-input" type="text"> 
                 </div>
              
-                <div class="input-password">
-                     <i class="fa-solid fa-lock"></i>
-                     <input class="passwrd-input" type="password" required>
+                <div class="input-email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input class="email-input" type="email" required>
                 </div>
+
+                <div class="input-phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <input class="phone-input" type="password" required>
+                </div>
+                
+                <div class="input-password">
+                    <i class="fa-solid fa-lock"></i>
+                    <input class="passwrd-input" type="password" required>
+                </div>
+                
                      <button class="registrar-btn-modal">Registrar</button>
             </div>
            

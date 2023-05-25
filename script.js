@@ -20,6 +20,15 @@ const go_out = document.querySelector('.logo')
 const user_icon_register = document.querySelector('.modal-register .register .fa-solid.fa-user')
 const padlock_icon_register = document.querySelector('.modal-register .register .fa-solid.fa-lock')
 const btn_registrar_modal = document.querySelector('.registrar-btn-modal')
+const home_hover = document.querySelector('.display-hover #home')
+const sobre_hover = document.querySelector('.display-hover #sobre')
+const quartos_hover = document.querySelector('.display-hover #quartos')
+const section_offers = document.querySelector('.section-offers')
+const email_input = document.querySelector('.modal-register .register .box-register .input-email .email-input')
+const email_evelop = document.querySelector('.modal-register .register .box-register .input-email .fa-solid.fa-envelope')
+const input_phone = document.querySelector('.modal-register .register .box-register .input-phone input')
+const phone_icon = document.querySelector('.modal-register .register .box-register .input-phone .fa-solid.fa-phone')
+
 
 go_out.onclick = function(){
     modal_content.classList.remove('active')
@@ -56,6 +65,7 @@ login_btn.onclick = function(){
 
 login_btn_hover.onclick = function(){
     modal_login.classList.add('active')
+    display_hover.classList.remove('active')
 }
 
 login_btn_modal.onclick = function(){
@@ -72,7 +82,6 @@ passwrd_input.onfocus = function(){
     passwrd_icon.classList.add('active')
 }
 
-
 fechar.onclick = function (){
     modal_content.classList.remove('active')
 }
@@ -84,4 +93,45 @@ btn_reservar.onclick= function (){
 btn_hover.onclick= function(){
     display_hover.classList.toggle('active')
 }
+
+home_hover.onclick= function (){
+    display_hover.classList.remove('active')
+}
+
+sobre_hover.onclick= function (){
+    display_hover.classList.remove('active')
+}
+
+quartos_hover.onclick= function (){
+    display_hover.classList.remove('active')
+}
+
+email_input.onfocus = function (){
+    email_evelop.classList.add('active')
+}
+
+input_phone.onfocus = function (){
+    phone_icon.classList.add('active')
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

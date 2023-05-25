@@ -131,13 +131,12 @@
     position: fixed;
     bottom: 1em;
     right: 1em;
-    width: 20em;
+    width: 16em;
     height: 26.6em;
-    border-radius: 3em;
+    border-radius: 1em;
     transform: translateY(30em);
     align-items: center;
     display: flex;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, .8);
     border: 3px solid rgba(0, 0, 0, 0.66);
     z-index: 200;
     animation: eixoY 200ms ease-in forwards 3s;
@@ -153,7 +152,7 @@
 .modal-content h3{
     position: absolute;
     top: .5em;
-    left: 28%;
+    left: 24%;
     font-size: 1.3em;
     color: orange;
     -webkit-text-stroke: .5px black;
@@ -162,52 +161,61 @@
 
 
 .modal-content .fa-solid.fa-xmark{
-    font-size: 2em;
+    font-size: 1.5em;
     position: absolute;
-    right: 25px;
-    top: 15px;
+    right: .3em;
+    top: .3em;
     cursor: pointer;
 }
 
 .modal-image{
     background-image: url(./images/quartooferta.jpg);
     position: center;
+    justify-content: center;
     background-size: cover;
     background-repeat: no-repeat;
     border: 3px solid orange;
     box-shadow: 0px,0px,3px lightgray;
-    border-radius: 2em;
+    border-radius: 1em;
     top: -1em;
     width: 12em;
     height: 17em;
     position: relative;
-    left: 4em;
+    left: 2em;
 }
 
 .modal-content .star{
     display: flex;
     position: absolute;
-    bottom: 3.5em;
-    left: 1.5em;
+    bottom: 4em;
+    right: 1em;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
     color: orange;
     align-items: center;
     justify-content: center;
+
 }
 
 .modal-content .star p{
     margin-left: 10px;
-    font-size: 11px;
+    font-size: .8em;
     color: black;
     font-weight: bold;
     display: flex;
     flex-direction: row;
+    width: 8em;
 }
 
 .modal-content .star h2{
     margin-left: 24px;
     font-size: 1em;
     -webkit-text-stroke: .1px black;
-    
+    width: 6em;
+    position: absolute;
+    bottom: -1.7em;
+    left: 1.6em;
 }
 
 .reservar{
@@ -215,8 +223,8 @@
     height: 35px;
     position: absolute;
     bottom: 2.5em;
-    left: 28%;
-    top: 90%;
+    left: 21%;
+    top: 91%;
     background-color: transparent;
     border: 2px solid orange;
     border-radius: 4px;
@@ -585,7 +593,7 @@
 
 .display-hover.active{
     display: flex;
-    position: absolute;
+    position: fixed;
     right: 1em;
     top: 5em;
     align-items: center;
@@ -597,11 +605,11 @@
     border-radius: 1em;
     backdrop-filter: blur(2px);
     animation: hoveron 200ms ease-in-out forwards;
-   
+    z-index: 99;
 }
 
 .display-hover #login-btn{
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 .display-hover a{
@@ -718,6 +726,7 @@
     color: whitesmoke;
     font-weight: bold;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .modal-login .login .box-login .registre:hover{
@@ -781,6 +790,62 @@
     color: whitesmoke;
     font-weight: bold;
     z-index: 99;
+}
+
+.modal-register .register .box-register .input-email{
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+    position: relative;
+}
+
+.modal-register .register .box-register .input-email input{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid orange;
+    border-radius: .4em;
+    color: whitesmoke;
+    font-weight: bold;
+    z-index: 99;
+}
+
+.modal-register .register .box-register .input-email .fa-solid.fa-envelope{
+    transform: translateX(0.4em);
+    transform: translateY(1.5em);
+}
+
+.modal-register .register .box-register .input-email .fa-solid.fa-envelope.active{
+    transform: translateY(0em);
+    color: orange;
+}
+
+.modal-register .register .box-register .input-phone{
+    display: flex;
+    flex-direction: column;
+    gap: .4em;
+    position: relative;
+}
+
+
+.modal-register .register .box-register .input-phone input{
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid orange;
+    border-radius: .4em;
+    color: whitesmoke;
+    font-weight: bold;
+    z-index: 99;
+}
+
+.modal-register .register .box-register .input-phone .fa-solid.fa-phone{
+    transform: translate(0.1em, 1.4em);
+}
+
+.modal-register .register .box-register .input-phone .fa-solid.fa-phone.active{
+    transform: translate(0.1em , 0.0em);
+    color: orange;
 }
 
 .modal-register .register .box-register .input-password{
@@ -934,7 +999,6 @@
     .text-box{
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        
+        flex-wrap: nowrap; 
     }
 }

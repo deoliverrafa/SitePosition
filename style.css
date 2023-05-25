@@ -642,7 +642,7 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.1);
     width: 20em;
-    height: 35em;
+    height: 20em;
     border-radius: 1em;
     backdrop-filter: blur(2px); 
 }
@@ -693,6 +693,13 @@
     height: 2em;
 }
 
+.modal-login .login .fa-solid.fa-xmark{
+    color: whitesmoke;
+    font-size: 1.5em;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
 
 .modal-login .login .box-login .login-btn-modal:hover{
     color: orange;
@@ -721,7 +728,7 @@
 
 .modal-login .login .box-login .registre{
     position: absolute;
-    bottom: 8.5em;
+    bottom: .6em;
     right: 7em;
     color: whitesmoke;
     font-weight: bold;
@@ -762,10 +769,25 @@
     background-color: rgba(0, 0, 0, .1);
 }
 
+.modal-register .register .fa-solid.fa-xmark{
+    color: whitesmoke;
+    font-size: 1.5em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+}
+
 .modal-register .register .box-register{
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+}
+
+.modal-register .register .box-register .form-register{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .modal-register .register .box-register h3{

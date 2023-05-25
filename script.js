@@ -1,4 +1,4 @@
-const fechar = document.querySelector('.fa-solid.fa-xmark')
+const fechar = document.querySelectorAll('.fa-solid.fa-xmark')
 const modal = document.querySelector('.modal.active')
 const modal_content = document.querySelector('.modal-content.active')
 const btn_reservar = document.querySelector('.reservar')
@@ -82,8 +82,16 @@ passwrd_input.onfocus = function(){
     passwrd_icon.classList.add('active')
 }
 
-fechar.onclick = function (){
+fechar[0].onclick = function (){
     modal_content.classList.remove('active')
+}
+
+fechar[1].onclick = function (){
+    modal_login.classList.remove('active')
+}
+
+fechar[2].onclick = function (){
+    modal_register.classList.remove('active')
 }
 
 btn_reservar.onclick= function (){

@@ -44,7 +44,7 @@ input_register_passwrd.onfocus = function(){
 
 btn_registrar_modal.onclick = function(){
     modal_register.classList.remove('active')
-    alert('Registro Realizado com Sucesso!!!')
+    alert(`Registro Realizado com Sucesso Olá ${pegarnomeregistro()}`)
 }
 
 input_register.onclick = function(){
@@ -61,16 +61,18 @@ name_input.onclick = function(){
 
 login_btn.onclick = function(){
     modal_login.classList.add('active')
+    modal_content.classList.remove('active')
 }
 
 login_btn_hover.onclick = function(){
     modal_login.classList.add('active')
     display_hover.classList.remove('active')
+    modal_content.classList.remove('active')
 }
 
 login_btn_modal.onclick = function(){
     modal_login.classList.remove('active')
-    alert("Login Efetuado")
+    alert(`Bem vindo de Volta ${pegarnomelogin()}`)
 }
 
 registre.onclick = function(){
@@ -122,24 +124,12 @@ input_phone.onfocus = function (){
     phone_icon.classList.add('active')
 }
 
+function pegarnomeregistro() {
+   let nome = input_register.value
+   return(nome)
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function pegarnomelogin() {
+    let nome_login = name_input.value
+    return(nome_login)
+}

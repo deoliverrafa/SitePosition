@@ -1,7 +1,4 @@
 const fechar = document.querySelectorAll('.fa-solid.fa-xmark')
-const modal = document.querySelector('.modal.active')
-const modal_content = document.querySelector('.modal-content.active')
-const btn_reservar = document.querySelector('.reservar')
 const btn_hover = document.querySelector('.fa-solid.fa-bars')
 const display_hover = document.querySelector('.display-hover')
 const user_icon = document.querySelector('.fa-solid.fa-user')
@@ -30,10 +27,6 @@ const input_phone = document.querySelector('.modal-register .register .box-regis
 const phone_icon = document.querySelector('.modal-register .register .box-register .input-phone .fa-solid.fa-phone')
 
 
-go_out.onclick = function(){
-    modal_content.classList.remove('active')
-}
-
 input_register_passwrd.onclick = function(){
     padlock_icon_register.classList.add('active')
 }
@@ -61,13 +54,11 @@ name_input.onclick = function(){
 
 login_btn.onclick = function(){
     modal_login.classList.add('active')
-    modal_content.classList.remove('active')
 }
 
 login_btn_hover.onclick = function(){
     modal_login.classList.add('active')
     display_hover.classList.remove('active')
-    modal_content.classList.remove('active')
 }
 
 login_btn_modal.onclick = function(){
@@ -84,20 +75,13 @@ passwrd_input.onfocus = function(){
     passwrd_icon.classList.add('active')
 }
 
-fechar[0].onclick = function (){
-    modal_content.classList.remove('active')
-}
 
-fechar[1].onclick = function (){
+fechar[0].onclick = function (){
     modal_login.classList.remove('active')
 }
 
-fechar[2].onclick = function (){
+fechar[1].onclick = function (){
     modal_register.classList.remove('active')
-}
-
-btn_reservar.onclick= function (){
-    modal_content.classList.remove('active')
 }
 
 btn_hover.onclick= function(){
@@ -132,4 +116,4 @@ function pegarnomeregistro() {
 function pegarnomelogin() {
     let nome_login = name_input.value
     return(nome_login)
-    }
+}

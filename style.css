@@ -5,10 +5,7 @@
     font-family: 'Poppins', sans-serif;
     transition: 200ms all ease-in-out;
     scroll-behavior: smooth;
-    
 }
-
-
 
 .nav-bar{
     justify-content: center;
@@ -23,17 +20,13 @@
 
 .logo{
     position: absolute;
-    left:1em;
+    left: 0em;
     font-weight: bolder;
     font-size: 1em;
     text-decoration: none;
     color: black;
     font-size: 1.5em;
     transition: 150ms all ease-in-out;
-}
-
-.logo:hover{
-    color: rgb(250, 132, 5);
 }
 
 .nav-bar .fa-solid.fa-bars{
@@ -137,7 +130,7 @@
     transform: translateY(30em);
     align-items: center;
     display: flex;
-    border: 3px solid rgba(0, 0, 0, 0.66);
+    border: 1px solid rgba(0, 0, 0, 0.66);
     z-index: 200;
     animation: eixoY 200ms ease-in forwards 3s;
 
@@ -241,7 +234,7 @@
 
 
 .section-offers{
-    width: 100%;
+    width: 100vw;
     height: 30em;
     display: flex;
     justify-content: center;
@@ -251,7 +244,7 @@
 }
 
 .section-offers .offers{
-    width: 100%;
+    width: 100vw;
     height: 85%;
     display: flex;
     justify-content: center;
@@ -301,7 +294,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
     border-radius: 1em;
     border: 2px solid rgba(0, 0, 0, .3);
 }
@@ -329,7 +321,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
     border-radius: 1em;
     border: 2px solid rgba(0, 0, 0, .3);
 }
@@ -358,7 +349,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
     border-radius: 1em;
     border: 2px solid rgba(0, 0, 0, .3);
 }
@@ -408,7 +398,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
     border-radius: 1em;
     border: 2px solid rgba(0, 0, 0, .3);
 }
@@ -437,7 +426,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
     border-radius: 1em;
     border: 2px solid rgba(0, 0, 0, .3);
 }
@@ -466,7 +454,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
     border-radius: 1em;
     border: 2px solid rgba(0, 0, 0, .3);
 }
@@ -493,26 +480,32 @@
 
 .section-offers .offers .offer1:hover{
     background-color: rgba(0, 0, 0, .05);
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 .section-offers .offers .offer2:hover{
     background-color: rgba(0, 0, 0, .05);
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 .section-offers .offers .offer3:hover{
     background-color: rgba(0, 0, 0, .05);
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-.section-offers .offers .offer4:hover{
+.section-offers2 .offers .offer4:hover{
     background-color: rgba(0, 0, 0, .05);
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-.section-offers .offers .offer5:hover{
+.section-offers2 .offers .offer5:hover{
     background-color: rgba(0, 0, 0, .05);
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
-.section-offers .offers .offer6:hover{
+.section-offers2 .offers .offer6:hover{
     background-color: rgba(0, 0, 0, .05);
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 .quartos{
@@ -542,6 +535,7 @@
     bottom: 0px;
     right: 0px;
     background-color: lightgray;
+    width: 100vw;
     height: 6em;
     align-items: center;
     justify-content: center;

@@ -373,7 +373,7 @@
 
 .section-offers2{
     margin-top: 3.5em;
-    width: 100%;
+    width: 100vw;
     height: 30em;
     display: flex;
     justify-content: center;

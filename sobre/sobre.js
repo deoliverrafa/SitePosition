@@ -11,7 +11,7 @@ const login_btn_modal = document.querySelector('.login-btn-modal')
 const login_btn_hover = document.querySelector('.display-hover #login-btn')
 const registre = document.querySelector('.registre')
 const modal_register = document.querySelector('.modal-register')
-const input_register = document.querySelector('.modal-register .input-register .name-input')
+const input_register_name = document.querySelector('.modal-register .input-register .name-input')
 const input_register_passwrd = document.querySelector('.modal-register .register .box-register .passwrd-input')
 const go_out = document.querySelector('.logo')
 const user_icon_register = document.querySelector('.modal-register .register .fa-solid.fa-user')
@@ -25,7 +25,8 @@ const email_input = document.querySelector('.modal-register .register .box-regis
 const email_evelop = document.querySelector('.modal-register .register .box-register .input-email .fa-solid.fa-envelope')
 const input_phone = document.querySelector('.modal-register .register .box-register .input-phone input')
 const phone_icon = document.querySelector('.modal-register .register .box-register .input-phone .fa-solid.fa-phone')
-
+const login_passwrd_input = document.querySelector('.modal-login .login .box-login .form-login .passwrd-input')
+const login_name_input = document.querySelector('.modal-login .login . box-login .form-login .name-input')
 
 input_register_passwrd.onclick = function(){
     padlock_icon_register.classList.add('active')
@@ -36,8 +37,10 @@ input_register_passwrd.onfocus = function(){
 }
 
 btn_registrar_modal.onclick = function(){
-    modal_register.classList.remove('active')
-    alert(`Registro Realizado com Sucesso Olá ${pegarnomeregistro()}`)
+
+        modal_register.classList.remove('active')
+        alert(`Cadastro Realizado com Sucesso Olá ${pegarnomeregistro()}`)
+   
 }
 
 input_register.onclick = function(){
@@ -105,11 +108,11 @@ email_input.onfocus = function (){
 }
 
 input_phone.onfocus = function (){
-    phone_icon.classList.add('active')
+    phone_icon.classList.add('active')  
 }
 
 function pegarnomeregistro() {
-   let nome = input_register.value
+   let nome = input_register_name.value
    return(nome)
 }
 
